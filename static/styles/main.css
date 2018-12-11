@@ -462,3 +462,13 @@ input.input {
     color: #e63939;
     font-weight: 500;
 }
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+a:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}

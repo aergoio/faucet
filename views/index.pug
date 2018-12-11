@@ -5,7 +5,7 @@ html
   body
     #content
       #logo
-      p This is a faucet that drips free AERGO testnet tokens to use for development and testing of dapps on the AERGO testnet. Enter your account address to register in the queue.
+      p Get your free AERGO testnet tokens to use for development and testing of dapps on the AERGO testnet! Enter your account address to register in the queue.
       if error
         p.error= error
       form(action="/request" method="post")
@@ -22,7 +22,9 @@ html
             input.btn#submit(type="submit" value="Request Tokens")
       p The queue currently dispenses #{dripAmount/Math.pow(10,18)} AERGO every #{dripInterval/1000} seconds. The maximum queue size is #{queueSize}.
       p
-        | Any questions or problems? Contact the Aergo team at tech@aergo.io or on
+        | Any questions or problems? Contact the Aergo team at 
+        a(href="mailto:tech@aergo.io") tech@aergo.io
+        |  or on 
         a(href="https://github.com/aergoio") Github
         | .
     script(src='https://www.google.com/recaptcha/api.js')

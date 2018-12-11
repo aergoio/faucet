@@ -1,6 +1,6 @@
 {
     "queueSize": 10,
-    "dripAmount": "100000000000000000",
+    "dripAmount": 100000000000000000,
     "dripInterval": 10000,
     "wallet": {
         "address": "",
