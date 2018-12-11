@@ -1,0 +1,30 @@
+html
+  head
+    title= "aergo on tap"
+    link(rel="stylesheet" href="/static/styles/main.css")
+  body
+    #content
+      #logo
+      p This is a faucet that drips free AERGO testnet tokens to use for development and testing of dapps on the AERGO testnet. Enter your account address to register in the queue.
+      if error
+        p.error= error
+      form(action="/request" method="post")
+        .form
+          .form-row
+            .label="Network"
+            .input="Testnet"
+          .form-row
+            .label="Your address"
+            input.input#address(type="text" name="address" placeholder="Enter account address")
+            .input-check#address-check
+          .form-footer
+            .g-recaptcha(data-sitekey="6LdoBoAUAAAAAL1Wn4YKYYd_9oJLVK94wPFWyvGi" data-callback="recaptchaSuccess")
+            input.btn#submit(type="submit" value="Request Tokens")
+      p The queue currently dispenses #{dripAmount/Math.pow(10,18)} AERGO every #{dripInterval/1000} seconds. The maximum queue size is #{queueSize}.
+      p
+        | Any questions or problems? Contact the Aergo team at tech@aergo.io or on
+        a(href="https://github.com/aergoio") Github
+        | .
+    script(src='https://www.google.com/recaptcha/api.js')
+    script(src='https://unpkg.com/@herajs/client@0.3.1/dist/herajs.min.js')
+    script(src='/static/script/main.js')
