@@ -423,6 +423,8 @@ input.input {
 }
 
 .btn {
+    text-decoration: none;
+    display: inline-block;
     border: 0;
     background-color: #F90F5F;
     color: #fff;
@@ -471,4 +473,9 @@ a:hover {
     background-color: #fff;
     color: #000;
     text-decoration: none;
+}
+
+em {
+    font-style: normal;
+    font-weight: 500;
 }
