@@ -1,6 +1,7 @@
 html
   head
     title= "aergo on tap"
+    meta(name="viewport" content="width=device-width")
     link(rel="stylesheet" href="/static/styles/main.css")
   body
     #content
@@ -12,7 +13,7 @@ html
         .form
           .form-row
             .label="Network"
-            .input="Testnet"
+            .input=networkName
           .form-row
             .label="Your address"
             input.input#address(type="text" name="address" placeholder="Enter account address")

@@ -9,7 +9,7 @@ const queueManager = new QueueManager({
     interval: config.dripInterval
 });
 
-const port = 3000;
+const port = config.port || 3000;
 
 const app = setupAppWithQueueManager(queueManager);
 
