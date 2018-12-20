@@ -1,0 +1,27 @@
+html
+  head
+    title= "aergo on tap - status"
+    meta(name="viewport" content="width=device-width")
+    link(rel="stylesheet" href="/static/styles/main.css")
+  body
+    #content
+      #logo
+      .form
+        .form-row
+          .label Network
+          .input=networkName
+        .form-row
+          .label Faucet address
+          .input
+            a(href=faucet.addressUrl)=faucet.addressShort
+        .form-row
+          .label Faucet balance
+          .input
+            if faucet.error
+              span= faucet.error
+            else
+              span=faucet.balance.toUnit('aergo')
+        .form-row
+          .label Queue length
+          .input=queue.length
+        
