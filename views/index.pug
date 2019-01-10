@@ -13,6 +13,7 @@ html
       if error
         p.error= error
       form(action="/request" method="post")
+        input(type="hidden" name="next" value=next)
         .form
           .form-row
             .label="Network"
@@ -29,7 +30,7 @@ html
         | Any questions or problems? Contact the Aergo team at 
         a(href="mailto:tech@aergo.io") tech@aergo.io
         |  or on 
-        a(href="https://github.com/aergoio") Github
+        a(href="https://github.com/aergoio/faucet") Github
         | .
     script(src='https://www.google.com/recaptcha/api.js')
     script(src='https://unpkg.com/@herajs/client@0.3.1/dist/herajs.min.js')

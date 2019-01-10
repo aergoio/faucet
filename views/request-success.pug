@@ -8,5 +8,8 @@ html
       #logo
       p Success! We added your account to the queue.
       div
-        a.btn(href=aergoscanUrl) View Account on Aergoscan
+        if hasNext
+          a.btn(href=next) Continue
+        else
+          a.btn(href=aergoscanUrl) View Account on Aergoscan
       p= "Attention! Tokens will be sent in about " + expectedWaitingFormatted + ". It can take a moment for the change to be reflected in Aergoscan."
