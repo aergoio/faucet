@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         updateSubmitButton();
     });
+
+    // validate on load
+    if (validateAddress(addressInput.value)) {
+        addressCheck.className = "input-check valid";
+        addressValid = true;
+    }
 });
 
 function validateAddress(addrInput) {
