@@ -9,5 +9,6 @@
     "network": {
         "name": "Testnet"
     },
+    "explorerUrl": "https://testnet.aergoscan.io",
     "port": 3000
 }
