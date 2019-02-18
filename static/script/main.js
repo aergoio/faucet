@@ -30,9 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function validateAddress(addrInput) {
-    let addr;
     try {
-        addr = new herajs.Address(addrInput);
+        new herajs.Address(addrInput);
         return true;
     } catch (e) {
         return false;
