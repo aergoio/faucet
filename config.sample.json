@@ -10,5 +10,8 @@
         "name": "Testnet"
     },
     "explorerUrl": "https://testnet.aergoscan.io",
+    "template": {
+        "head": ""
+    },
     "port": 3000
 }
