@@ -1,13 +1,16 @@
 {
     "queueSize": 10,
-    "dripAmount": 100000000000000000,
+    "dripAmount": "1 aergo",
     "dripInterval": 10000,
     "wallet": {
         "address": "",
+        "encprivkey": "",
         "password": ""
     },
     "network": {
-        "name": "Testnet"
+        "name": "Testnet",
+        "chainId": "testnet.aergo.io",
+        "nodeUrl": "testnet.aergo.io:7845"
     },
     "explorerUrl": "https://testnet.aergoscan.io",
     "template": {
