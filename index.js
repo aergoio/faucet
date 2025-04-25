@@ -1,7 +1,7 @@
-import setupAppWithQueueManager from './lib/app';
-import QueueManager from './lib/queue-manager';
-import config from './config.json';
-import FaucetWallet from './lib/wallet';
+import setupAppWithQueueManager from './lib/app.js';
+import QueueManager from './lib/queue-manager.js';
+import config from './config.json' with { type: 'json' };
+import FaucetWallet from './lib/wallet.js';
 
 const wallet = new FaucetWallet(config.wallet);
 
