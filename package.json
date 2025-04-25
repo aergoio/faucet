@@ -14,8 +14,7 @@
   "dependencies": {
     "@herajs/client": "^2.1.2",
     "@herajs/wallet": "^2.1.2",
-    "body-parser": "^1.20.3",
-    "express": "^4.21.2",
+    "express": "^5.1.0",
     "express-rate-limit": "^7.5.0",
     "node-fetch": "^3.3.2",
     "pug": "^3.0.2"
